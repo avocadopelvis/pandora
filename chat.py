@@ -1,64 +1,46 @@
 import json
 import numpy as np
-import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Embedding, GlobalAveragePooling1D
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 
-#load the json file
+import colorama
+colorama.init()
+from colorama import Fore, Style, Back
+
+import random
+import pickle
+
 with open('intents.json') as file:
     data = json.load(file)
 
-training_sentences = []
-training_labels = []
-labels = []
-responses = []
+def chat():
+    #load trained model
+    model = keras.models.load_model('chat_model')
 
-for intent in data['intents']:
-    for pattern in intent['patterns']:
-        training_sentences.append(pattern)
-        training_labels.append(intent['tag'])
-    responses.append(intent['responses'])
+    #load tokenizer object
+    with open('tokenizer.pickle', 'rb') as handle:
+        tokenizer = pickle.load(handle)
 
-    if intent['tag'] not in labels:
-        labels.append(intent['tag'])
+    #load label encoder object
+    with open('label_encoder.pickle', 'rb') as enc:
+        lbl_encoder = pickle.load(enc)
 
-num_classes = len(labels)
+    #parameters
+    max_len = 20
 
-lbl_encoder = LabelEncoder()
-lbl_encoder.fit(training_labels)
-training_labels = lbl_encoder.transform(training_labels)
+    while True:
+        print(Fore.LIGHTBLUE_EX + 'User: ' + Style.RESET_ALL, end = "")
+        inp = input()
+        if inp.lower() == 'quit':
+            break
 
-#text-preprocessing
-vocab_size = 1000
-embedding_dim = 16
-max_len = 20
-oov_token = "<OOV>"
+        result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]), truncating = 'post', maxlen = max_len))
+        tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
-tokenizer = Tokenizer(num_words = vocab_size, oov_token = oov_token)
-tokenizer.fit_on_texts(training_sentences)
-word_index = tokenizer.word_index
-sequences = tokenizer.texts_to_sequences(training_sentences)
-padded_sequences = pad_sequences(sequences, truncating = 'post', maxlen = max_len)
+        for i in data['intents']:
+            if i['tag'] == tag:
+                print(Fore.GREEN + 'ChatBot' + Style.RESET_ALL, np.random.choice(i['responses']))
 
-#model
-model = Sequential()
-model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
-model.add(GlobalAveragePooling1D())
-model.add(Dense(16, activation='relu'))
-model.add(Dense(16, activation='relu'))
-model.add(Dense(num_classes, activation='softmax'))
-
-model.compile(loss='sparse_categorical_crossentropy', 
-              optimizer='adam', metrics=['accuracy'])
-
-model.summary()
-
-epochs = 500
-history = model.fit(padded_sequences, np.array(training_labels), epochs = epochs)
-
-#save the trained model
-
+    
+print(Fore.YELLOW + 'Start messaging with the bot (type quit to stop)' + Style.RESET_ALL)
+chat()
