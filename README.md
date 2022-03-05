@@ -1,2 +1,2 @@
-# chatbot-1.0
-A Deep Learning Chatbot.
+# PANDORA - THERAPY CHATBOT
+**WORK IN PROGRESS**
