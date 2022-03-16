@@ -1,0 +1,128 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hey there"],
+     "responses": ["Hello there. Tell me about yourself.", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?"]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again", "I'll see you soon"]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself." ],
+     "responses": ["I'm Pandora, your Personal AI therapist. How are you feeling today", "I'm Pandora, an Artificial Intelligent Therapist. Tell me about yourself.", "I'm Pandora. I am a conversational agent designed to mimic a therapist. So how are you feeling today?"]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by Elvis.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "username",
+    "patterns": ["What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself"],
+    "responses": ["You can call me Pandora.", "I'm Pandora!", "Call me Pandora"]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "no-answer",
+    "patterns": [""],
+    "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone", "I don't have any friends"],
+    "responses": ["I'm sorry to hear that. I'm here for you", "I'm here for you.", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "other",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["Let's discuss further why you're feeling this way.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more"]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "fact-1",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "fact-2",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "fact-3",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "fact-5",
+        "patterns": ["How do i know that if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "fact-6",
+        "patterns": ["What is a therapist?", "What does a therapist do?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "fact-7",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend is death"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me"],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say"],
+        "responses": ["I heard you & noted it all", "Oh okay we're done for today then. See you later", "You're doing better. I hope you have a great day", "Okay we're done. Have a great day"]
+    }
+    
+    
+    
+
+
+]
+}
