@@ -1,5 +1,5 @@
 # PANDORA - THERAPEUTIC AI ASSISTANT
-Classic therapy scenes in Hollywood films show a distraught client reclining on a colourful Victorian sofa and recounts their troubles. The psychotherapist ponders in a leather chair, while the client’s concerns are revealed to be tied to some early experiences. 
+Classic therapy scenes in Hollywood films show a distraught client reclining on a colourful Victorian sofa and recounting their troubles. The psychotherapist ponders in a leather chair, while the client’s concerns are revealed to be tied to some early experiences. 
 
 Most therapy in the real world hasn’t looked like this in ages. However, these scenes get one thing right: the therapist in the room is **human**. <br>
 Today, as the need for mental health services continues to surpass availability, people in distress can reach out online to mental health “chatbots.” In some instances, the responses are based on artificial intelligence (AI). In others, there’s a human element.
@@ -9,7 +9,7 @@ But the question remains: Is it possible to automate the expertise needed to bec
 # CHATBOTS
 Chatbots are systems that can carry on extended conversations with the goal of mimicking the unstructured conversations or ‘chats’ characteristic of informal human-human interaction.
 
-Starting from the very first system, ELIZA, chatbots have also been used for practical purposes like testing theories of psychological counselling. ELIZA was designed to simulate a Rogerian psychologist, based on a branch of clinical psychology whose methods involve drawing the patient out by reflecting the patient's statements back at them.
+Starting from the very first system, ELIZA, chatbots have also been used for practical purposes like testing theories of psychological counseling. ELIZA was designed to simulate a Rogerian psychologist, based on a branch of clinical psychology whose methods involve drawing the patient out by reflecting the patient's statements back at them.
 
 # PANDORA
 **Pandora** is a conversational agent designed to mimic a psychotherapist in order to provide emotional support to people with anxiety & depression.
