@@ -2,3 +2,4 @@ tensorflow
 sklearn
 nltk
 colorama
+flask

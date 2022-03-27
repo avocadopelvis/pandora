@@ -32,6 +32,7 @@ def chat():
         print(Fore.LIGHTBLUE_EX + 'User: ' + Style.RESET_ALL, end = "")
         inp = input()
         if inp.lower() == 'quit':
+            print(Fore.GREEN + 'Pandora:' + Style.RESET_ALL, "Take care. See you soon.")
             break
 
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]), truncating = 'post', maxlen = max_len))
@@ -39,7 +40,7 @@ def chat():
 
         for i in data['intents']:
             if i['tag'] == tag:
-                print(Fore.GREEN + 'Pandora' + Style.RESET_ALL, np.random.choice(i['responses']))
+                print(Fore.GREEN + 'Pandora:' + Style.RESET_ALL, np.random.choice(i['responses']))
 
     
 print(Fore.YELLOW + 'Start talking with the Pandora, your Personal AI Therapist. (Type quit to stop)' + Style.RESET_ALL)

@@ -117,7 +117,7 @@
     },
     {"tag": "suicide",
         "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
-        "responses": [""]
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."]
     }, 
     {"tag": "hate-you",
         "patterns": ["I hate you", "I don't like you", "I don't trust you"],
@@ -137,15 +137,15 @@
     },
     {"tag": "repeat",
         "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
-        "responses": [""]
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
     },
     {"tag": "wrong",
         "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
-        "responses": [""]
+        "responses": ["I'm very sorry. Let's try that again"]
     },
     {"tag": "stupid",
         "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
-        "responses": [""]
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
     },
     {"tag": "location",
         "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
@@ -153,7 +153,7 @@
     },
     {"tag": "morning",
         "patterns": ["Good morning"],
-        "responses": ["Good morning. How are you feeling today? I hope you had a good night's sleep."]
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
     },
     {"tag": "afternoon",
         "patterns": ["Good afternoon"],
@@ -174,15 +174,9 @@
     {"tag": "",
         "patterns": [""],
         "responses": [""]
-    },
+    }
 
 
     
-    
-    
-    
-    
-
-
 ]
 }
