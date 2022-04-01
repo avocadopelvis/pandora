@@ -9,7 +9,8 @@ But the question remains: Is it possible to automate the expertise needed to bec
 # CHATBOTS
 Chatbots are systems that can carry on extended conversations with the goal of mimicking the unstructured conversations or ‘chats’ characteristic of informal human-human interaction.
 
-Starting from the very first system, ELIZA, chatbots have also been used for practical purposes like testing theories of psychological counseling. ELIZA was designed to simulate a Rogerian psychologist, based on a branch of clinical psychology whose methods involve drawing the patient out by reflecting the patient's statements back at them.
+![eliza](https://user-images.githubusercontent.com/92647313/161245945-2314570e-6c7a-4ab2-98aa-98129529c669.png) <br>
+Starting from the very first system, **ELIZA**, chatbots have also been used for practical purposes like testing theories of psychological counseling. ELIZA was designed to simulate a Rogerian psychologist, based on a branch of clinical psychology whose methods involve drawing the patient out by reflecting the patient's statements back at them.
 
 # PANDORA
 **Pandora** is a conversational agent designed to mimic a psychotherapist in order to provide emotional support to people with anxiety & depression.
@@ -34,5 +35,9 @@ python chat.py
 ```
 
 You can modify Pandora by inserting your own text in the `intents.json` file.
+
+# A CONVERSATION WITH PANDORA
+![sample-chat](https://user-images.githubusercontent.com/92647313/161245842-93846e15-1fb7-4a5f-b863-83588858fddf.png)
+ 
 
 
