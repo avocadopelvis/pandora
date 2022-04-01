@@ -1,5 +1,7 @@
 import json
 import numpy as np
+import warnings
+warnings.filterwarnings("ignore")
 from tensorflow import keras
 from sklearn.preprocessing import LabelEncoder
 
@@ -34,7 +36,7 @@ def chat():
         if inp.lower() == 'quit':
             print(Fore.GREEN + 'Pandora:' + Style.RESET_ALL, "Take care. See you soon.")
             break
-
+    
         result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([inp]), truncating = 'post', maxlen = max_len))
         tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
@@ -43,5 +45,10 @@ def chat():
                 print(Fore.GREEN + 'Pandora:' + Style.RESET_ALL, np.random.choice(i['responses']))
 
     
-print(Fore.YELLOW + 'Start talking with the Pandora, your Personal AI Therapist. (Type quit to stop)' + Style.RESET_ALL)
+print(Fore.YELLOW + 'Start talking with Pandora, your Personal Therapeutic AI Assistant. (Type quit to stop talking)' + Style.RESET_ALL)
 chat()
+
+# {"tag": "",
+#  "patterns": [""],
+#  "responses": [""]
+# },

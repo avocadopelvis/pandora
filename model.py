@@ -1,6 +1,8 @@
 import json
 import pickle
 import numpy as np
+import warnings
+warnings.filterwarnings("ignore")
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.models import Sequential
