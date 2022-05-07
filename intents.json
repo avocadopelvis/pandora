@@ -52,7 +52,7 @@
     "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
     },
     {"tag": "stressed",
-        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck"],
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
         "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
     },
     {"tag": "worthless",
@@ -148,15 +148,15 @@
         "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
     },
     {"tag": "problem",
-        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough."],
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
         "responses": ["I see. Have you taken any approaches to not feel this way?"]
     },
     {"tag": "no-approach",
-        "patterns": ["I guess not. All I can think about are my exams."],
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
         "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
     },
     {"tag": "learn-more",
-        "patterns": ["ok sure. i would like to learn more about it."],
+        "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
         "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
     },
     {"tag": "user-agree",
@@ -168,14 +168,14 @@
         "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
     },
     {"tag": "user-meditation",
-        "patterns": ["i did what you said and i feel alot better. thank you very much."],
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
         "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
     },
     {"tag": "pandora-useful",
         "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
         "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
     },
-    {"tag": "mentat-health-fact",
+    {"tag": "mental-health-fact",
         "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
         "responses": [""]
     },
