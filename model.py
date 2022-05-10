@@ -12,7 +12,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras import layers
 
-
 #load the json file
 with open('intents.json') as file:
     data = json.load(file)
@@ -73,8 +72,6 @@ model.add(Dense(num_classes, activation='softmax'))
 # model.add(Dense(16, activation='relu'))
 # model.add(Dense(16, activation='relu'))
 # model.add(Dense(num_classes, activation='softmax'))
-
- 
 
 model.compile(loss='sparse_categorical_crossentropy', 
               optimizer='adam', metrics=['accuracy'])
