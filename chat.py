@@ -48,6 +48,7 @@ def chat():
 print(Fore.YELLOW + 'Start talking with Pandora, your Personal Therapeutic AI Assistant. (Type quit to stop talking)' + Style.RESET_ALL)
 chat()
 
+
 # {"tag": "",
 #  "patterns": [""],
 #  "responses": [""]

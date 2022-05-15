@@ -12,6 +12,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras import layers
 
+
 #load the json file
 with open('intents.json') as file:
     data = json.load(file)
@@ -66,16 +67,17 @@ model.add(Dense(num_classes, activation='softmax'))
 # model.add(Dense(num_classes, activation='softmax'))
 
 #model3
-# model = Sequential()
-# model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
-# model.add(Bidirectional(tf.keras.layers.LSTM(64))),
-# model.add(Dense(16, activation='relu'))
-# model.add(Dense(16, activation='relu'))
-# model.add(Dense(num_classes, activation='softmax'))
+    # model = Sequential()
+    # model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
+    # model.add(Bidirectional(tf.keras.layers.LSTM(64))),
+    # model.add(Dense(16, activation='relu'))
+    # model.add(Dense(16, activation='relu'))
+    # model.add(Dense(num_classes, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy', 
-              optimizer='adam', metrics=['accuracy'])
-            #   , 'categorical_accuracy', 'kullback_leibler_divergence', 'poisson'])
+              optimizer='adam', metrics=['accuracy']) 
+            #   'cosine_similarity', 'kullback_leibler_divergence'])
+            #   , 'poisson'
 
 model.summary()
 
