@@ -29,7 +29,7 @@ Activate the virtual environment and then install the necessary libraries using:
 ```
 pip install -r requirements.txt
 ```
-Train the mode using:
+Train the model using:
 ```
 python model.py
 ```
