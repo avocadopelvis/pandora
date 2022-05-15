@@ -29,6 +29,10 @@ Activate the virtual environment and then install the necessary libraries using:
 ```
 pip install -r requirements.txt
 ```
+Train the mode using:
+```
+python model.py
+```
 Now run Pandora using:
 ```
 python chat.py
