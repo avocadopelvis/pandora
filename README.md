@@ -40,6 +40,9 @@ You can modify Pandora by inserting your own text in the `intents.json` file.
 
 # A CONVERSATION WITH PANDORA
 ![sample-chat](https://user-images.githubusercontent.com/92647313/161245842-93846e15-1fb7-4a5f-b863-83588858fddf.png)
+
+# DATASET
+https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data
  
 
 
