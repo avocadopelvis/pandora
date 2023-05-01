@@ -43,6 +43,9 @@ You can modify Pandora by inserting your own text in the `intents.json` file.
 
 # DATASET
 https://www.kaggle.com/datasets/elvis23/mental-health-conversational-data
+
+# FUTURE WORK
+- [ ] Fine-tune using GPT-3.
  
 
 
