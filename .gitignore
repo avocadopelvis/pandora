@@ -130,3 +130,6 @@ dmypy.json
 
 # trained model
 chat-model/
+
+label_encoder.pickle
+tokenizer.pickle
